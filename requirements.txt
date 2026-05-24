@@ -19,7 +19,7 @@ asyncio
 bard 
 beautifulsoup4
 bs4
-dnspython
+dnspython==2.6.1
 emojis
 ffmpeg-python
 gitpython
@@ -30,7 +30,7 @@ heroku3
 httpx
 instaloader
 lexica-api
-motor 
+motor==3.3.2
 numpy
 opencv-python
 pillow==9.5.0
@@ -65,3 +65,6 @@ wget
 youtube-search
 youtube-search-python
 yt-dlp
+dnspython==2.6.1
+motor==3.3.2
+pymongo[srv]==4.6.1
