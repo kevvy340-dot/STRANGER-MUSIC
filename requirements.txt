@@ -69,3 +69,4 @@ dnspython==2.6.1
 motor==3.3.2
 pymongo[srv]==4.6.1
 Flask==3.0.3
+google-api-python-client
