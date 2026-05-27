@@ -39,3 +39,21 @@ Telegram = TeleAPI()
 YouTube = YouTubeAPI()
 
 APP = "InflexOwnerBot"  # connect music api key "Dont change it"
+from flask import Flask
+from threading import Thread
+import os
+
+webapp = Flask(__name__)
+
+@webapp.route("/")
+def home():
+    return "Bot Is Alive"
+
+def run():
+    webapp.run(host="0.0.0.0", port=int(os.environ.get("PORT", 8080)))
+
+def keep_alive():
+    t = Thread(target=run)
+    t.start()
+
+keep_alive()
